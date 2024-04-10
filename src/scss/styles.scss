@@ -1,0 +1,182 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.container-small {
+  max-width: 1040px;
+}
+
+.banner {
+  height: 100vh;
+
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+
+  //     width: 100%;
+  //     height: 100%;
+  //     left: 0;
+  //     top: 0;
+  //     background: rgba(0, 0, 0, 0.5);
+  //     z-index: 1;
+  //   }
+}
+
+.navbar {
+  padding: 4rem 0;
+}
+
+.navbar-nav {
+  .nav-link {
+    font-size: 18px;
+    color: #fff;
+    padding: 0px 16px !important;
+  }
+
+  .nav-item .active {
+    font-style: italic;
+    color: #fff;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 80%;
+      background-color: #fff; /* Set the color of the underline */
+    }
+  }
+}
+
+.tag {
+  font-size: 1.45rem;
+  font-weight: 300;
+  strong {
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+.highlight {
+  font-size: 7rem;
+  text-shadow: 1px 1px #00000085;
+}
+
+.our-solutions {
+  background-image: url(../images/section-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .solution-logo {
+    position: absolute;
+    right: 0;
+    top: -50px;
+  }
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.our-solutions__content {
+  max-width: 740px;
+}
+
+/* Main Box */
+
+.main-box {
+  display: flex;
+  background: #000;
+  margin: 70px auto 70px auto;
+  padding: 0;
+  width: 100%;
+}
+
+.box {
+  height: 622px;
+  padding: 15px;
+  border-right: 1px solid white;
+  webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+}
+
+.detail {
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+  color: black;
+  opacity: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.box.active {
+  width: 70% !important;
+}
+
+.box.active .detail {
+  opacity: 1;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  transform: none;
+}
+
+.box span {
+  writing-mode: vertical-rl;
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 40px;
+  transform: rotate(180deg);
+  font-weight: 400;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.box.active span {
+  left: 25px;
+  right: auto;
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  line-height: 23px;
+}
