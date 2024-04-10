@@ -3,12 +3,124 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
+$primary: #ec9747;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
+html {
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: "helvetica_neueblack";
+  src: url("../fonts/helveticaneueblack-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneueblack-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neueblack_italic";
+  src: url("../fonts/helveticaneueblackitalic-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneueblackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neuebold";
+  src: url("../fonts/helveticaneuebold-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneuebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neuebold_italic";
+  src: url("../fonts/helveticaneuebolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneuebolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neueheavy";
+  src: url("../fonts/helveticaneueheavy-webfont.woff2") format("woff2"),
+    url("../fonts/elveticaneueheavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neueheavy_italic";
+  src: url("../fonts/helveticaneueheavyitalic-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneueheavyitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neueitalic";
+  src: url("../fonts/helveticaneueitalic-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneueitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neuelight";
+  src: url("../fonts/helveticaneuelight-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneuelight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neuelight_italic";
+  src: url("../fonts/helveticaneuelightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneuelightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neuemedium";
+  src: url("../fonts/helveticaneuemedium-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneuemedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica_neuemedium_italic";
+  src: url("../fonts/helveticaneuemediumitalic-webfont.woff2") format("woff2"),
+    url("../fonts/helveticaneuemediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+p {
+  line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 70px;
 }
 
 .container-small {
@@ -65,27 +177,38 @@ body {
 
 .tag {
   font-size: 1.45rem;
+  font-weight: 400;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.highlight {
+  font-size: 7.5rem;
+  font-style: normal;
   font-weight: 300;
+  line-height: 120px; /* 100% */
+  letter-spacing: -3.6px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #00000085;
   strong {
     font-weight: 700;
     font-style: italic;
   }
 }
 
-.highlight {
-  font-size: 7rem;
-  text-shadow: 1px 1px #00000085;
-}
-
 .our-solutions {
   background-image: url(../images/section-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
+
+  background-repeat: no-repeat;
+  background-position: center 40px;
 
   .solution-logo {
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -140px;
   }
 }
 
@@ -101,22 +224,33 @@ body {
 
 .main-box {
   display: flex;
-  background: #000;
-  margin: 70px auto 70px auto;
+
+  margin: 80px auto;
   padding: 0;
   width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ec9747;
+  background: #221f20;
+  overflow: hidden;
 }
 
 .box {
-  height: 622px;
+  min-height: 622px;
   padding: 15px;
-  border-right: 1px solid white;
+  border-right: 1px solid #ec9747;
   webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
   position: relative;
   overflow: hidden;
   list-style: none;
+  display: flex;
+
+  align-items: flex-start;
+}
+
+.box:last-child {
+  border-right: 0;
 }
 
 .detail {
@@ -125,16 +259,23 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  background: white;
-  color: black;
-  opacity: 0;
+  background: transparent;
+  color: #fff;
+  opacity: 1;
   padding: 30px;
   box-sizing: border-box;
-  webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
+  z-index: -1;
+  font-size: 18px;
+}
+
+.detail h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bg-black-v2 {
+  background-color: #221f20;
 }
 
 .box.active {
@@ -143,20 +284,17 @@ body {
 
 .box.active .detail {
   opacity: 1;
-  -webkit-transition-delay: 0.6s;
-  -moz-transition-delay: 0.6s;
-  -o-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-  transform: none;
+
+  z-index: 1;
 }
 
 .box span {
   writing-mode: vertical-rl;
   font-size: 20px;
-  height: 100%;
+  height: 93%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  justify-content: flex-start;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -175,8 +313,4 @@ body {
   right: auto;
   margin: 0;
   font-weight: 600;
-}
-
-p {
-  line-height: 23px;
 }
