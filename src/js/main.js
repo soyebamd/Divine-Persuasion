@@ -14,3 +14,10 @@ $(".box").click(function () {
   $(".box").removeClass("active");
   $(this).addClass("active");
 });
+
+$(".multiple-items").slick({
+  infinite: true,
+  slidesToShow: 3,
+  autoplay: true,
+  slidesToScroll: 3,
+});
