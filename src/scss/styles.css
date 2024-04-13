@@ -12473,6 +12473,9 @@ h1,
   overflow: visible;
   position: relative;
 }
+.testimonials .rating img {
+  margin: 0 2px;
+}
 .testimonials .testimonials__navigation {
   position: absolute;
   top: 50%;
@@ -12520,5 +12523,25 @@ h1,
 
 img#to-right {
   transform: rotate(180deg);
+}
+
+.projects-gallery img {
+  margin: 0 24px;
+}
+
+.pricing__option {
+  max-width: 333px;
+  border-radius: 20px;
+  background: #f2f2f2;
+  padding: 16px;
+}
+
+.pricing__option.premium {
+  max-width: 373px;
+  padding: 44.805px 17.922px 17.922px 17.922px;
+  border: 1.12px solid #221f20;
+  border-radius: 22.402px;
+  box-shadow: -11.201px 14.562px 22.402px 0px rgba(0, 0, 0, 0.4);
+  background: #ec9747;
 }
 /*# sourceMappingURL=styles.css.map */

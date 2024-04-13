@@ -45,3 +45,11 @@ $(".testimonials__slider").slick({
 
   slidesToScroll: 1,
 });
+
+$(".projects-gallery").slick({
+  infinite: true,
+  slidesToShow: 3,
+  autoplay: true,
+
+  slidesToScroll: 1,
+});
