@@ -104,6 +104,8 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+
+  color: #221f20;
 }
 
 p {
@@ -116,10 +118,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
+  font-family: "helvetica_neuebold";
+  text-transform: uppercase;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 70px;
 }
 
@@ -208,7 +212,7 @@ h1 {
   .solution-logo {
     position: absolute;
     right: 0;
-    top: -140px;
+    top: 0;
   }
 }
 
@@ -315,10 +319,117 @@ h1 {
   font-weight: 600;
 }
 
-.multiple-items {
-  margin: 0 -24px;
-}
-
 .multiple-items__img {
   padding: 0 24px;
+}
+
+.heading {
+  text-transform: uppercase;
+  line-height: 70px;
+  span {
+    display: block;
+    color: #ec9747;
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+.btn {
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 10px;
+  background: var(--Light-Orange, #ec9747);
+}
+
+.feature-video,
+.feature-video iframe {
+  height: 100vh;
+  width: 100%;
+}
+
+.logo-slider img {
+  margin: 0 80px;
+  height: 80px;
+  width: auto;
+}
+
+.our-process {
+  background: #ec9747;
+  background-image: url("../images/lines.svg");
+  background-position: top;
+  background-size: contain;
+  .mb-5 {
+    margin-bottom: 80px;
+  }
+  .fs-3 {
+    font-size: 2rem;
+  }
+  .our-process__item__img {
+    margin-right: 40px;
+  }
+}
+
+.testimonials {
+  background: #5e8fb7;
+  background-image: url(../images/dot-grid.svg);
+
+  background-position: center 40px;
+
+  overflow: visible;
+  position: relative;
+
+  .testimonials__navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .review {
+    margin: 32px 0;
+    p {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .profile-img {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+  }
+}
+
+.author {
+  font-size: 24px;
+  font-style: normal;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  padding: 12px;
+  border: solid 1px #f2f2f2;
+  cursor: pointer;
+  transition: all 600ms;
+  &:hover {
+    padding: 0px 0px 0px 25px;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+img#to-right {
+  transform: rotate(180deg);
 }

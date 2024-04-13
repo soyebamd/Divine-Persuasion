@@ -17,7 +17,31 @@ $(".box").click(function () {
 
 $(".multiple-items").slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   autoplay: true,
+  arrows: false,
+  dots: false,
   slidesToScroll: 3,
+});
+
+$(".logo-slider").slick({
+  infinite: true,
+  slidesToShow: 6,
+  autoplay: true,
+  arrows: false,
+  dots: false,
+  slidesToScroll: 1,
+});
+
+$(".testimonials__slider").slick({
+  infinite: true,
+  slidesToShow: 1,
+  autoplay: false,
+
+  arrows: true,
+
+  prevArrow: "#to-left",
+  nextArrow: "#to-right",
+
+  slidesToScroll: 1,
 });
