@@ -21,11 +21,13 @@
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
-    <header class="site-header position-absolute top-0 z-3 w-100 p-4">
+    <header class="site-header position-absolute top-0 z-3 w-100 p-0 p-md-4">
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
+
+          <div class="d-flex">
           <a class="navbar-brand" href="#">
-            <img src="images/logo.svg" />
+            <img src="images/logo.svg" class="img-fluid"/>
           </a>
           <button
             class="navbar-toggler"
@@ -38,6 +40,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+</div>
+
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -79,7 +84,11 @@
               Hi. We are <strong>Divine Persuasion Studio</strong>
             </span>
             <h1 class="h2 text-uppercase text-white m-0 highlight">
-              let's <strong>Bring the Gospel</strong> to the world together.
+
+
+             <span> let's  </span> Bring the Gospel <span> to the world together.</span>
+
+
             </h1>
           </div>
         </div>
@@ -90,11 +99,15 @@
  
 
       <section class="local-studio section">
-        <div class="container">
-          <div class="d-flex justify-content-between">
-            <h2 class="h1 heading mb-5">we are your <span> Local Studio </span></h2>
+        <div class="container container-small">
+          <div class="d-flex justify-content-between flex-column flex-md-row flex-column-reverse">
+            <h2 class="h1 heading mb-4 mb-md-5 mt-4 mt-md-0">
+              
+             <span> we are your </span> <em>Local Studio</em> 
+            
+            </h2>
 
-            <img src="images/local-studio.svg" />
+            <img src="images/local-studio.svg" class="local-logo  mb-0 mb-md-5" />
           </div>
           <p>
             A partnership built on your vision and community by people who
@@ -112,37 +125,53 @@
 
           <div class="multiple-items">
             <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
+              <img src="images/local-1.png" class="img-fluid" />
             </div>
 
-            <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
-            </div> <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
-            </div> <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
-            </div> <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
+
+              <div class="multiple-items__img">
+              <img src="images/local-2.png" class="img-fluid" />
             </div>
 
-            <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
+
+              <div class="multiple-items__img">
+              <img src="images/local-3.png" class="img-fluid" />
             </div>
 
-            <div class="multiple-items__img">
-              <img src="images/slide-1.png" class="img-fluid" />
+
+              <div class="multiple-items__img">
+              <img src="images/local-4.png" class="img-fluid" />
             </div>
+
+              <div class="multiple-items__img">
+              <img src="images/local-5.png" class="img-fluid" />
+            </div>
+
+
+              <div class="multiple-items__img">
+              <img src="images/local-6.png" class="img-fluid" />
+            </div>
+
+              <div class="multiple-items__img">
+              <img src="images/local-7.png" class="img-fluid" />
+            </div>
+
+
           </div>
 </div>
           </section>
           
 
             <section class="local-studio section">
-        <div class="container">
+        <div class="container container-small">
           <div class="d-flex justify-content-between">
-            <h2 class="h1 heading mb-5">You didn’t go <br>  into ministry to <span>run an art house. </span></h2>
+           
+           
+          <h2 class="h1 heading mb-5">
+            
+            <span>You didn’t go <br>  into ministry to </span> <em> Run art house. </em></h2>
 
-            <img src="images/local-studio.svg" />
+           
           </div>
            <p class="mb-5">
             You are reading this because you recognize that telling people who
@@ -154,7 +183,7 @@
 
            <a href="#" class="btn btn-primary">View Pricing</a>
 
-          <a href="#" class="btn btn-transparent">Let's Talk <img src="images/arrow-pointing-right.png"></a>
+          <a href="#" class="btn btn-transparent text-decoration-underline">Let's Talk <img src="images/arrow-pointing-right.png"></a>
 
         </section>
 
@@ -163,7 +192,10 @@
 
 <!-- 16:9 aspect ratio -->
 <section class="embed-responsive embed-responsive-16by9 feature-video">
+  <div class="video-wrapper">
   <iframe frameborder="0"  class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+</div>
+
 </section>
 
 
@@ -171,24 +203,24 @@
 
   <div class="container-fluid text-center">
 
-    <h3 class="mb-5  text-primary" >Trusted by</h3>
+    <h2 class="mb-5 h3  text-primary" >Trusted by</h2>
 
     <div class="logo-slider">
 
-      
-       <img src="images/churchome.svg">
-
-        <img src="images/hope-city.svg">
-
-         <img src="images/union.svg">
-
-          <img src="images/life-church.svg">
-
-           <img src="images/arma.svg">
-
-            <img src="images/azag.svg">
-
-             <img src="images/arc.svg">
+      <div>
+       <img src="images/churchome.svg" class="img-fluid"></div>
+<div>
+        <img src="images/hope-city.svg"  class="img-fluid"></div>
+<div>
+         <img src="images/union.svg"  class="img-fluid"></div>
+<div>
+          <img src="images/life-church.svg"  class="img-fluid"></div>
+<div>
+           <img src="images/arma.svg"  class="img-fluid"></div>
+<div>
+            <img src="images/azag.svg"  class="img-fluid"></div>
+<div>
+             <img src="images/arc.svg"  class="img-fluid"></div>
 
             
 
@@ -204,9 +236,9 @@
           <img src="images/solution-logo.svg" class="solution-logo" />
 
           <div class="our-solutions__content">
-            <h1 class="text-uppercase text-primary">Our Solutions</h1>
+            <h3 class="h1 text-uppercase text-primary fw-normal ">Our Solutions</h1>
             <p>
-              If you’re struggling to find, keep, and afford high-quality
+              If you're struggling to find, keep, and afford high-quality
               creative resources, the search is over.
             </p>
           </div>
@@ -214,106 +246,86 @@
           <div class="toggle-content">
             <ul class="main-box">
               <li class="box active">
+                <!--#01-->
                 <em>01</em>
-                <span>Branding</span>
+                <span>Art Direction</span>
 
                 <div class="detail active">
-                  <h3>Branding</h3>
+                  <h3>Art Direction</h3>
                   <p>
-                    Blending your existing Brand Identity elements, such as
-                    Typefaces, Color Palettes, and Logos with our team's
-                    creative expression, we create a Core Style that sets a
-                    refreshed tone of your look and feel.
+                   Every project is built for you by an entire studio comprising a Creative Director, Project Manager, and Senior Motion/Graphic Designers, providing a multi-disciplinary art experience and agency-level talent.
                   </p>
-                  <img src="images/branding.jpg" />
+                  <img src="images/art-direction.jpg" class="img-fluid" />
                 </div>
               </li>
+
+              <!--#02-->
               <li class="box">
                 <em>02</em>
-                <span>Visual Design</span>
+                <span>Branding</span>
                 <div class="detail">
+                   <h3>Branding</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                   Blend your existing brand identity elements, typefaces, color palettes, and logos with our team's creative expertise with engaging, ready-to-use artwork that you’re proud of. In under three weeks, we collaborate with you to create a Core Style that sets a refreshed tone for your look and feel.
                   </p>
-                  <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested.
-                  </p>
+                 <img src="images/branding.jpg" class="img-fluid">
                 </div>
               </li>
+
+              <!--#03-->
               <li class="box">
                 <em>03</em>
-                <span>Motion Design + Video</span>
+                <span>Visual Design & Merch</span>
 
                 <div class="detail">
+                   <h3>Visual Design & Merch</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                   Each Buildout includes your Vision, a Mood board Presentation, and our team’s creative execution. With a set or custom design deliverable pack, we cater to the specific needs of every Sermon Series, Event, Sub-Ministry Brand, Conference, or Merch Collection to tell the Most Beautiful Story through every design.
                   </p>
-                  <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested.
-                  </p>
+                  <img src="images/visual-design-merch.jpg" class="img-fluid">
                 </div>
               </li>
+
+
+               <!--#04-->
               <li class="box">
                 <em>04</em>
-                <span>Art Direction</span>
+                <span>Motion Design & Video</span>
                 <div class="detail">
+
+                    <h3>Motion Design & Video</h3>
+
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                   Cater to your needs with our Motion Tools for projects like Sermon Bumper Videos, Recaps/Lyric Videos, Design Animation, Guided Prayers, Countdown Videos, Photo Loops, and more. Through an existing Buildout (look and feel), our team combines your vision, design, and context to deliver engaging content for social, web, and in-service displays.
                   </p>
-                  <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested.
-                  </p>
+                  <img src="images/motion-design-video.jpg" class="img-fluid">
                 </div>
               </li>
 
+              <!--#05-->
               <li class="box">
                 <em>05</em>
                 <span>Creative Operations Software</span>
                 <div class="detail">
+                   <h3>Creative Operations Software</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                  You have been at this creative-content-in-the-church game for years. You know the glaring need for high-quality art and that you need a comprehensive system to manage it all. We have built easy-to-use tools for the stakeholders on your team to onboard, request, track, manage, communicate, and receive your creative content. Login to our Platform and get everything done in half the time without the bandwidth and misscomunication headaches.
                   </p>
-                  <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested.
-                  </p>
+                   <img src="images/creative-operations-software.jpg" class="img-fluid">
                 </div>
               </li>
 
+
+               <!--#06-->
               <li class="box">
                 <em>06</em>
-                <span>On-demand Creative Direction</span>
+                <span>On-Demand Customer Support</span>
                 <div class="detail">
+                   <h3>On-Demand Customer Support</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                   Trying to give feedback on a project? Not sure how to make a request? Ready to onboard a new teammate? Your needs and concerns matter deeply to us. We are ready to hop on a call or communicate through our platform on project threads to get you the help you need. We are in this with you for the long haul. Churches tell us it feels like we are an extension of their staff.
                   </p>
-                  <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested.
-                  </p>
+                    <img src="images/support.jpg" class="img-fluid">
                 </div>
               </li>
             </ul>
@@ -329,15 +341,15 @@
 
             <div class="col-lg-6">
 
-              <h4 class="h1 text-uppercase">Our Process</h4>
+              <h4 class="h1 text-uppercase fw-normal mb-3">Our Process</h4>
 
-              <p class="text-white fs-3  text-uppercase">You can have world-class art without the budget – burnout – and bandwidth problems. We have built the easiest way for you to get the content you need forever.</p>
+              <p class="text-white fs-3 process-heading  text-uppercase">You can have world-class art without the budget – burnout – and bandwidth problems. We have built the easiest way for you to get the content you need forever.</p>
 
             </div>
 
              <div class="col-lg-6">
 
-              <div class="our-process__items">
+              <div class="our-process__items mt-5 mt-md-0">
 
                   <div class="our-process__item d-flex mb-5">
 
@@ -347,8 +359,8 @@
 
                     </div>
                      <div class="our-process__item__content">
-                      <h4 class="fs-3  text-uppercase  text-uppercase">Creative Assesment</h4>
-                      <p>Give us all the vision, context, and details you have in mind.</p>
+                      <h4 class="fs-3  text-uppercase  text-uppercase  fw-bold">Creative Assesment</h4>
+                      <p class="fw-normal">Give us all the vision, context, and details you have in mind.</p>
                      </div>
 
                   </div>
@@ -362,8 +374,8 @@
 
                     </div>
                      <div class="our-process__item__content">
-                      <h4 class="fs-3  text-uppercase  text-uppercase">Moodboard</h4>
-                      <p >Look through three curated looks that showcase distinct directions we can take with your project based on your initial vision.</p>
+                      <h4 class="fs-3  text-uppercase  text-uppercase fw-bold">Moodboard</h4>
+                      <p class="fw-normal" >Look through three curated looks that showcase distinct directions we can take with your project based on your initial vision.</p>
                      </div>
 
                   </div>
@@ -377,8 +389,8 @@
 
                     </div>
                      <div class="our-process__item__content">
-                      <h4 class="fs-3  text-uppercase  text-uppercase">First Look</h4>
-                      <p>Share your thoughts and feedback on a creative connect so we can land a final direction.</p>
+                      <h4 class="fs-3  text-uppercase  text-uppercase fw-bold">First Look</h4>
+                      <p class="fw-normal">Share your thoughts and feedback on a creative connect so we can land a final direction.</p>
                      </div>
 
                   </div>
@@ -392,8 +404,8 @@
 
                     </div>
                      <div class="our-process__item__content">
-                       <h4 class="fs-3  text-uppercase">Final Buildout</h4>
-                      <p>Receive final deliverables ready to use with Adobe files attached. Request any additional art under this established look and feel.</p>
+                       <h4 class="fs-3  text-uppercase fw-bold">Final Buildout</h4>
+                      <p class="fw-normal">Receive final deliverables ready to use with Adobe files attached. Request any additional art under this established look and feel.</p>
                      </div>
 
                   </div>
@@ -409,8 +421,8 @@
 
                     </div>
                      <div class="our-process__item__content">
-                      <h4 class="fs-3 text-uppercase"> Build a Mosiac of Artwork</h4>
-                      <p>Request and track all your content needs in easy-to-use project management software for all your ongoing projects.</p>
+                      <h4 class="fs-3 text-uppercase fw-bold"> Build a Mosiac of Artwork</h4>
+                      <p class="fw-normal">Request and track all your content needs in easy-to-use project management software for all your ongoing projects.</p>
                      </div>
 
                   </div>
@@ -426,14 +438,14 @@
         </div>
       </section>
 
-<section class="section testimonials text-white">
+<section class="section testimonials text-white ">
   <div class="container-fluid g-0">
-<div class="testimonials__slider">
+<div class="testimonials__slider ">
 
 
 
     <div class="testimonial text-center mx-auto ">
-      <div class="container position-relative ">
+      <div class="container  container-small position-relative ">
       <img src="images/profile-picture.png" alt="Profile Picture" class="img-fluid profile-img mx-auto">
       <div class="rating d-flex justify-content-center mx-auto pt-5" aria-label="Rating: 5 out of 5 stars">
         <img src="images/star.svg" alt="Star">
@@ -450,7 +462,7 @@
 </div>
 
      <div class="testimonial text-center mx-auto  ">
-         <div class="container position-relative">
+         <div class="container  container-small  position-relative">
       <img src="images/profile-picture.png" alt="Profile Picture" class="img-fluid profile-img mx-auto">
       <div class="rating d-flex justify-content-center mx-auto pt-5" aria-label="Rating: 5 out of 5 stars">
         <img src="images/star.svg" alt="Star">
@@ -514,21 +526,28 @@
 </section>
 
 
-<section class="pricing text-white">
-  <div class="container">
+<section class="section pricing text-white ">
+  <div class="container container-small z-2 position-relative">
+
+<div class="text-center mb-5">
 
 
-    <h2 class="h1 heading mb-5">CHOOSE YOUR <br>   <span>OWN ADVENTURE </span></h2>
+
+    <h2 class="h1 heading mb-3">
+            
+            <span>CHOOSE YOUR <br>   </span> <em> OWN ADVENTURE </em></h2>
+
+
 
     <p>Are you planting a church? Ask us about our Church Plant options!</p>
+</div>
 
+    <div class="row adventure-slider">
 
-    <div class="row">
-
-      <div class="col-md-4">
+      <div class="col-lg-4">
 
         <!-- ESSENTIALS -->
-        <div class="pricing__option">
+        <div class="pricing__option ">
 
           <h4>ESSENTIALS</h4>
 
@@ -565,7 +584,7 @@
 </ul>
 
 
-<a href="#" class="btn btn-white">
+<a href="#" class="btn btn-transparent btn-small w-100 d-block mx-auto">
   Contact Us
 </a>
 
@@ -575,7 +594,7 @@
       </div>
 
       
-      <div class="col-md-4">
+      <div class="col-lg-4">
 
         <!--PREMIUM-->
         <div class="pricing__option premium ">
@@ -592,11 +611,13 @@
 
 <ul class="list-unstyled">
 
-  <li>20 Project Credits/mo</li>
+  <li>40 Project Credits/mo</li>
 
-  <li>Monthly Creative Connect</li>
+  <li>2 Creative Connects/mo</li>
 
-  <li>2 Users</li>
+  <li>4 Users</li>
+
+  <li>Creative Direction</li>
 
   <li>Visual Design</li>
 
@@ -607,14 +628,13 @@
   <li>Tailored onboarding for your team</li>
 
   <li>Adobe File Access</li>
-
   <li>Full-service Project Management Platform</li>
-
 
 </ul>
 
 
-<a href="#" class="btn  btn-secondary">
+<a href="#" class="btn btn-transparent btn-small w-100 d-block mx-auto">
+
   Contact Us
 </a>
 
@@ -626,10 +646,61 @@
       </div>
 
       
-      <div class="col-md-4">
+      <div class="col-lg-4">
 
         <!--ENTERPRISE-->
          <div class="pricing__option ">
+
+
+          <h4>ENTERPRISE</h4>
+
+          <h5 class="h2">Let's Talk</h5>
+
+          <p>This tier is built for churches and organizations on a rapid growth trajectory, helping them keep up with the demand of curating beautiful-engaging content in the digital age without compromising art quality.
+</p>
+
+<hr>
+
+
+<ul class="list-unstyled">
+
+  <li>Custom Credit amount to fit your needs</li>
+
+  <li>3 Creative Connects/mo</li>
+
+  <li>5+ Users</li>
+
+  <li>Creative Direction</li>
+
+  <li>Visual Design</li>
+
+  <li>Motion Design and Video Clips</li>
+
+  <li>Dedicated Creative Manager</li>
+
+  <li>Tailored onboarding for your team</li>
+
+  <li>Adobe File Access</li>
+
+  <li>
+Full-service Project Management Platform
+  </li>
+
+
+  <li>
+2x annual on-site visit
+  </li>
+
+</ul>
+
+
+<a href="#" class="btn btn-transparent btn-small w-100 d-block mx-auto">
+
+  Contact Us
+</a>
+
+
+       
 
           
         </div>
@@ -639,8 +710,159 @@
   </div>
 </section>
 
+
+
+<section class="contact section">
+
+  <div class="container">
+    <div class="contact-form">
+
+<div class="row g-0">
+  <div class="col-lg-6 text-center text-md-left p-4 col-md-p-5 contact-bg d-flex flex-column text-white  justify-content-center align-items-center align-items-md-start">
+
+  
+
+    <h2 class="h1 heading mb-3">
+            
+            <span class="d-inline">Let's   </span> <em class="text-white"> Talk </em></h2>
+
+
+
+    <p>Ready to schedule a demo or learn more about a partnership with our studio?</p>
+
+  </div>
+   <div class="col-lg-6">
+<div class="form-wrapper p-5 bg-white">
+   
+    <form action="submit.php" method="post">
+      <div class="form-group">
+        <label for="fullName" class="mb-2">Full Name:</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="churchName" class="mb-2">Church Name:</label>
+        <input type="text" class="form-control" id="churchName" name="churchName" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="mb-2">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="mb-2">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message" class="mb-2">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+
+</div>
+   </div>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
          
     </main>
+
+
+<footer class="section site-footer">
+
+  <div class="container">
+
+
+    <h5 class="h1 text-primary full-heighlight mb-5"><em>tell  a  beautiful  
+story</em></h5>
+
+<div class="row">
+
+  <div class="col">
+
+   
+    <h6>get in touch</h6>
+ <!-- Navbar links -->
+    <div class="" id="navbarNav">
+      <ul class="navbar-nav ml-auto text-dark">
+        <li class="nav-item d-flex">
+      <span>   01</span> <a class="nav-link menu-item  text-dark" href="#">Instagram</a>
+        </li>
+         <li class="nav-item d-flex">
+         <span>   02</span>  <a class="nav-link menu-item  text-dark" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item d-flex">
+        <span>   03</span>   <a class="nav-link menu-item text-dark" href="#">Schedule a Demo</a>
+        </li>
+        <li class="nav-item d-flex">
+       <span>   04</span>    <a class="nav-link menu-item text-dark" href="#">DP Radio</a>
+        </li>
+        <li class="nav-item d-flex">
+        <span>   05</span>   <a class="nav-link menu-item text-dark" href="#">Behance</a>
+        </li>
+        <li class="nav-item d-flex">
+       <span>   06</span>    <a class="nav-link menu-item text-dark" href="#">Terms of Service<br> & Privacy Policy</a>
+        </li>
+      </ul>
+    </div> 
+  </div>
+
+
+  <div class="col">
+ <div class="address-wrapper float-start float-md-end mt-5 mt-md-0">
+
+    <address>
+
+      <img src="images/address.svg" alt="LOS ANGELES, CA  EST 2020, USA">
+
+      
+
+    </address>
+
+    <ul class="time list-unstyled">
+
+        <li>
+          <time class="footer-time--pst">11:55 am</time>
+          <location>Los Angeles, CA</location>
+          <div class="tag">Pacific Time</div>
+        </li>
+
+
+
+        
+
+
+
+
+         <li>
+          <time class="footer-time--est" >8:55 PM</time>
+          <location>NEW YORK, NY</location>
+          <div class="tag">EASTERN STANDARD TIME</div>
+        </li>
+
+<!-- 
+         <li>
+          <time>7:55 Pm</time>
+          <location>Sydney, AUS</location>
+          <div class="tag">Australian Eastern Time</div>
+        </li> -->
+
+
+
+    </ul>
+
+  </div>
+
+</div>
+</div>
+  </div>
+
+</footer>
+
+
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script
       type="text/javascript"
