@@ -12316,6 +12316,36 @@ h4,
   padding: 4rem 0;
 }
 
+.navbar-toggler {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.mob-menu {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.mob-menu button.btn-close.text-white {
+  font-size: 35px;
+  color: #fff;
+  opacity: 1;
+}
+.mob-menu .mob-menu__items {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+.mob-menu .mob-menu__items li {
+  margin: 16px 0;
+}
+.burger .burger__item {
+  width: 18px;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  margin: 3px;
+}
+
 .navbar-nav .nav-link {
   font-size: 18px;
   color: #fff;
@@ -12377,6 +12407,13 @@ h4,
   right: 0;
   top: 0;
 }
+@media (max-width: 768px) {
+  .our-solutions .solution-logo {
+    position: relative;
+    max-width: 90px;
+    float: right;
+  }
+}
 
 .section {
   padding: 6rem 0;
@@ -12389,6 +12426,44 @@ h4,
 
 .our-solutions__content {
   max-width: 740px;
+  clear: both;
+}
+
+.mobile-main-box {
+  border-radius: 10px;
+  border: 1px solid var(--Light-Orange, #ec9747);
+  background: var(--Black, #221f20);
+}
+.mobile-main-box .toggle-heading {
+  padding: 24px 16px;
+}
+.mobile-main-box .toggle-heading span {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.mobile-main-box .toggle-heading em {
+  font-size: 24px;
+}
+.mobile-main-box .mob-detail {
+  padding: 24px 16px;
+}
+.mobile-main-box .mob-detail h3, .mobile-main-box .mob-detail .h3 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.mobile-main-box .mob-detail p {
+  font-family: "helvetica_neuelight";
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  margin-bottom: 24px;
+}
+.mobile-main-box .mobile-box {
+  border-bottom: solid 1px #ec9747 !important;
+}
+.mobile-main-box .mobile-box:last-child {
+  border-bottom: 0 !important;
 }
 
 /* Main Box */
@@ -12609,6 +12684,11 @@ h4,
   justify-content: space-between;
   padding: 0 30px;
 }
+@media (max-width: 768px) {
+  .testimonials .testimonials__navigation {
+    padding: 0 8px;
+  }
+}
 .testimonials .review {
   margin: 32px 0;
 }
@@ -12630,10 +12710,15 @@ h4,
   right: 0;
   top: 0;
 }
+@media (max-width: 768px) {
+  .testimonials .profile-img {
+    position: relative;
+  }
+}
 
 .author {
   font-family: "helvetica_neuemedium";
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
 }
 

@@ -200,6 +200,41 @@ h4,
   padding: 4rem 0;
 }
 
+.navbar-toggler {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.mob-menu {
+  button.btn-close.text-white {
+    font-size: 35px;
+    color: #fff;
+    opacity: 1;
+  }
+  background-color: rgba(0, 0, 0, 0.7);
+  .mob-menu__items {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    li {
+      margin: 16px 0;
+      a {
+      }
+    }
+  }
+}
+
+.burger {
+  .burger__item {
+    width: 18px;
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px;
+  }
+}
+
 .navbar-nav {
   .nav-link {
     font-size: 18px;
@@ -265,6 +300,11 @@ h4,
     position: absolute;
     right: 0;
     top: 0;
+    @media (max-width: 768px) {
+      position: relative;
+      max-width: 90px;
+      float: right;
+    }
   }
 }
 
@@ -277,6 +317,46 @@ h4,
 
 .our-solutions__content {
   max-width: 740px;
+  clear: both;
+}
+
+.mobile-main-box {
+  border-radius: 10px;
+  border: 1px solid var(--Light-Orange, #ec9747);
+  background: var(--Black, #221f20);
+
+  .toggle-heading {
+    padding: 24px 16px;
+    span {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    em {
+      font-size: 24px;
+    }
+  }
+  .mob-detail {
+    padding: 24px 16px;
+    h3 {
+      font-size: 40px;
+      text-transform: capitalize;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: "helvetica_neuelight";
+      font-size: 16px;
+      line-height: 150%; /* 24px */
+      letter-spacing: -0.32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .mobile-box {
+    border-bottom: solid 1px $primary !important;
+    &:last-child {
+      border-bottom: 0 !important;
+    }
+  }
 }
 
 /* Main Box */
@@ -506,6 +586,10 @@ h4,
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+
+    @media (max-width: 768px) {
+      padding: 0 8px;
+    }
   }
 
   .review {
@@ -527,12 +611,15 @@ h4,
     z-index: -1;
     right: 0;
     top: 0;
+    @media (max-width: 768px) {
+      position: relative;
+    }
   }
 }
 
 .author {
   font-family: "helvetica_neuemedium";
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
 }
 
