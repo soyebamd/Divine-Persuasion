@@ -19,10 +19,10 @@
     />
 <script type="module" src="./js/main.js"></script>
 </head>
-<body>
+<body class="position-relative">
 <header class="site-header position-absolute top-0 z-3 w-100 p-0 p-md-4">
   <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid">
+    <div class="container-fluid flex-column align-items-start">
       <div class="d-flex"> <a class="navbar-brand" href="#"> <img src="images/logo.svg" class="img-fluid"/> </a>
         <button
             class="navbar-toggler"
@@ -37,7 +37,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto  my-4 mb-lg-0">
           <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#"
                   >Who We Are</a
                 > </li>
@@ -74,24 +74,25 @@
     <div class="container">
       <div
             class="banner__content m-0 mt-5 position-relative z-3 text-white"
-          > <span class="tag text-uppercase"> Hi. We are <strong>Divine Persuasion Studio</strong> </span>
+          > <span class="tag text-uppercase d-none"> Hi. We are <strong>Divine Persuasion Studio</strong> </span>
         <h1 class="h2 text-uppercase text-white m-0 highlight"> <span> let's </span> Bring the Gospel <span> to the world together.</span> </h1>
       </div>
     </div>
   </div>
 </section>
 <main>
-<section class="local-studio section">
+<section class="local-studio section bg-gray">
 <div class="container container-small">
+
 <div class="d-flex justify-content-between flex-column flex-md-row flex-column-reverse">
   <h2 class="h1 heading mb-4 mb-md-5 mt-4 mt-md-0"> <span> we are your </span> <em>Local Studio</em> </h2>
   <img src="images/local-studio.svg" class="local-logo  mb-0 mb-md-5" /> </div>
-<p> A partnership built on your vision and community by people who
+<p class="helvetica_neuebold_italic "> A partnership built on your vision and community by people who
   deeply care about the greatest story ever told. The only platform
   built for your church to scale design, marketing, and creative
   operations with world-class-art. </p>
 </section>
-<section class="local-studio-slider">
+<section class="local-studio-slider bg-gray pb-5">
   <div class="container-fluid">
     <div class="multiple-items">
       <div class="multiple-items__img"> <img src="images/local-1.png" class="img-fluid" /> </div>
@@ -104,7 +105,7 @@
     </div>
   </div>
 </section>
-<section class="local-studio section">
+<section class="local-studio section bg-gray">
 <div class="container container-small">
 <div class="d-flex justify-content-between">
   <h2 class="h1 heading mb-5"> <span>You didn’t go <br>
@@ -117,23 +118,36 @@
 <a href="#" class="btn btn-primary">View Pricing</a> <a href="#" class="btn btn-transparent text-decoration-underline">Let's Talk <img src="images/arrow-pointing-right.png"></a>
 </section>
 <!-- 16:9 aspect ratio -->
-<section class="embed-responsive embed-responsive-16by9 feature-video">
+<section class="embed-responsive embed-responsive-16by9 feature-video m-0 m-md-4 rounded-4 overflow-hidden w-auto">
   <div class="video-wrapper">
     <iframe frameborder="0"  class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
   </div>
 </section>
-<section class="section trusted-by">
+<section class="section trusted-by bg-gray">
   <div class="container-fluid text-center">
     <h2 class="mb-5 h3  text-primary" >Trusted by</h2>
-    <div class="logo-slider">
-      <div> <img src="images/churchome.svg" class="img-fluid"></div>
-      <div> <img src="images/hope-city.svg"  class="img-fluid"></div>
-      <div> <img src="images/union.svg"  class="img-fluid"></div>
-      <div> <img src="images/life-church.svg"  class="img-fluid"></div>
-      <div> <img src="images/arma.svg"  class="img-fluid"></div>
-      <div> <img src="images/azag.svg"  class="img-fluid"></div>
-      <div> <img src="images/arc.svg"  class="img-fluid"></div>
-    </div>
+   <div class="logo-slider-1">
+  <div><img src="images/newlife.png" class="img-fluid"></div>
+  <div><img src="images/carmel.png" class="img-fluid"></div>
+ 
+   <div><img src="images/hope-city.png" class="img-fluid"></div>
+ 
+    <div><img src="images/local.png" class="img-fluid"></div>
+ 
+     <div><img src="images/union.png" class="img-fluid"></div>
+ 
+      <div><img src="images/life-church.png" class="img-fluid"></div>
+ 
+       <div><img src="images/arma.png" class="img-fluid"></div>
+ 
+        <div><img src="images/azag.png" class="img-fluid"></div>
+ 
+         <div><img src="images/arc.png" class="img-fluid"></div>
+
+           <div><img src="images/churchome.png" class="img-fluid"></div>
+            
+ 
+</div>
   </div>
 </section>
 <section class="our-solutions bg-black-v2 text-white section">
@@ -152,8 +166,8 @@
           <div class="d-flex d-md-block justify-content-between flex-row-reverse toggle-heading"> <em>01</em> <span>Art Direction</span> </div>
           <div class="detail active">
             <h3>Art Direction</h3>
-            <p> Every project is built for you by an entire studio comprising a Creative Director, Project Manager, and Senior Motion/Graphic Designers, providing a multi-disciplinary art experience and agency-level talent. </p>
-            <img src="images/art-direction.jpg" class="img-fluid" /> </div>
+            <p class="mb-5"> Every project is built for you by an entire studio comprising a Creative Director, Project Manager, and Senior Motion/Graphic Designers, providing a multi-disciplinary art experience and agency-level talent. </p>
+            <img src="images/art-direction.jpg" class="img-fluid rounded-3" /> </div>
         </li>
         <!--#02-->
         <li class="box">
@@ -161,7 +175,7 @@
           <div class="detail">
             <h3>Branding</h3>
             <p> Blend your existing brand identity elements, typefaces, color palettes, and logos with our team's creative expertise with engaging, ready-to-use artwork that you’re proud of. In under three weeks, we collaborate with you to create a Core Style that sets a refreshed tone for your look and feel. </p>
-            <img src="images/branding.jpg" class="img-fluid"> </div>
+            <img src="images/branding.jpg" class="img-fluid rounded-3"> </div>
         </li>
         <!--#03-->
         <li class="box">
@@ -169,7 +183,7 @@
           <div class="detail">
             <h3>Visual Design & Merch</h3>
             <p> Each Buildout includes your Vision, a Mood board Presentation, and our team’s creative execution. With a set or custom design deliverable pack, we cater to the specific needs of every Sermon Series, Event, Sub-Ministry Brand, Conference, or Merch Collection to tell the Most Beautiful Story through every design. </p>
-            <img src="images/visual-design-merch.jpg" class="img-fluid"> </div>
+            <img src="images/visual-design-merch.jpg" class="img-fluid rounded-3"> </div>
         </li>
         <!--#04-->
         <li class="box">
@@ -177,7 +191,7 @@
           <div class="detail">
             <h3>Motion Design & Video</h3>
             <p> Cater to your needs with our Motion Tools for projects like Sermon Bumper Videos, Recaps/Lyric Videos, Design Animation, Guided Prayers, Countdown Videos, Photo Loops, and more. Through an existing Buildout (look and feel), our team combines your vision, design, and context to deliver engaging content for social, web, and in-service displays. </p>
-            <img src="images/motion-design-video.jpg" class="img-fluid"> </div>
+            <img src="images/motion-design-video.jpg" class="img-fluid rounded-3"> </div>
         </li>
         <!--#05-->
         <li class="box">
@@ -185,7 +199,7 @@
           <div class="detail">
             <h3>Creative Operations Software</h3>
             <p> You have been at this creative-content-in-the-church game for years. You know the glaring need for high-quality art and that you need a comprehensive system to manage it all. We have built easy-to-use tools for the stakeholders on your team to onboard, request, track, manage, communicate, and receive your creative content. Login to our Platform and get everything done in half the time without the bandwidth and misscomunication headaches. </p>
-            <img src="images/creative-operations-software.jpg" class="img-fluid"> </div>
+            <img src="images/creative-operations-software.jpg" class="img-fluid rounded-3"> </div>
         </li>
         <!--#06-->
         <li class="box">
@@ -193,7 +207,7 @@
           <div class="detail">
             <h3>On-Demand Customer Support</h3>
             <p> Trying to give feedback on a project? Not sure how to make a request? Ready to onboard a new teammate? Your needs and concerns matter deeply to us. We are ready to hop on a call or communicate through our platform on project threads to get you the help you need. We are in this with you for the long haul. Churches tell us it feels like we are an extension of their staff. </p>
-            <img src="images/support.jpg" class="img-fluid"> </div>
+            <img src="images/support.jpg" class="img-fluid rounded-3"> </div>
         </li>
       </ul>
     </div>
@@ -333,14 +347,14 @@
           <cite class="author">Adam Deidel | Executive Pastor, Love Church </cite> </div>
       </div>
     </div>
-    <div class="testimonials__navigation"> <img src="images/arrow.svg" class="img-fluid arrow" id="to-right"> <img src="images/arrow.svg" class="img-fluid arrow" id="to-left"> </div>
+    <div class="testimonials__navigation d-none d-md-flex"> <img src="images/arrow.svg" class="img-fluid arrow" id="to-right"> <img src="images/arrow.svg" class="img-fluid arrow" id="to-left"> </div>
   </div>
 </section>
 <section class="section ">
   <div class="container-fluid projects-gallery"> <img src="images/projects-1.png" class="img-fluid"> <img src="images/projects-2.png" class="img-fluid"> <img src="images/projects-3.png" class="img-fluid"> <img src="images/projects-4.png" class="img-fluid"> <img src="images/projects-5.png" class="img-fluid"> <img src="images/projects-6.png" class="img-fluid"> <img src="images/projects-7.png" class="img-fluid"> <img src="images/projects-8.png" class="img-fluid"> </div>
 </section>
 <section class="section pricing text-white ">
-  <div class="container container-small z-2 position-relative">
+  <div class="container  z-2 position-relative" style="max-width: 1120px;">
     <div class="text-center mb-5">
       <h2 class="h1 heading mb-3"> <span>CHOOSE YOUR <br>
         </span> <em> OWN ADVENTURE </em></h2>
@@ -370,6 +384,7 @@
       <div class="col-lg-4">
         <!--PREMIUM-->
         <div class="pricing__option premium ">
+          <span class="plan_tag">Popular</span>
           <h4>PREMIUM</h4>
           <h5 class="h2">Let's Talk</h5>
           <p>The perfect tier for churches with multiple ministries, building not only your core sermon series designs but supporting other events, ministries, and segments of your church. </p>
@@ -390,7 +405,7 @@
       </div>
       <div class="col-lg-4">
         <!--ENTERPRISE-->
-        <div class="pricing__option ">
+        <div class="pricing__option  ">
           <h4>ENTERPRISE</h4>
           <h5 class="h2">Let's Talk</h5>
           <p>This tier is built for churches and organizations on a rapid growth trajectory, helping them keep up with the demand of curating beautiful-engaging content in the digital age without compromising art quality. </p>
@@ -415,15 +430,23 @@
 </section>
 <section class="contact section">
   <div class="container">
+  
+  
+  
+  
     <div class="contact-form">
       <div class="row g-0">
-        <div class="col-lg-6 text-center text-md-left p-4 col-md-p-5 contact-bg d-flex flex-column text-white  justify-content-center align-items-center align-items-md-start">
+        <div class="col-lg-6 p-4 col-md-p-5 contact-bg d-flex flex-column text-white  justify-content-center align-items-start ">
           <h2 class="h1 heading mb-3"> <span class="d-inline">Let's </span> <em class="text-white"> Talk </em></h2>
           <p>Ready to schedule a demo or learn more about a partnership with our studio?</p>
         </div>
         <div class="col-lg-6">
           <div class="form-wrapper p-5 bg-white">
-            <form action="submit.php" method="post">
+           
+            <form method="POST" id="form">
+
+               <input type="hidden" name="access_key" value="868c61a6-9d93-4c4d-8287-b3e47ccff562">
+
               <div class="form-group">
                 <label for="fullName" class="mb-2">Full Name:</label>
                 <input type="text" class="form-control" id="fullName" name="fullName" required>
@@ -442,14 +465,23 @@
               </div>
               <div class="form-group">
                 <label for="message" class="mb-2">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
               </div>
               <button type="submit" class="btn btn-primary w-100">Submit</button>
             </form>
+            <div id="result"></div>
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
   </div>
 </section>
 </main>
@@ -467,8 +499,8 @@
             <li class="nav-item d-flex"> <span> 02</span> <a class="nav-link menu-item  text-dark" href="#">Contact Us</a> </li>
             <li class="nav-item d-flex"> <span> 03</span> <a class="nav-link menu-item text-dark" href="#">Schedule a Demo</a> </li>
             <li class="nav-item d-flex"> <span> 04</span> <a class="nav-link menu-item text-dark" href="#">DP Radio</a> </li>
-            <li class="nav-item d-flex"> <span> 05</span> <a class="nav-link menu-item text-dark" href="#">Behance</a> </li>
-            <li class="nav-item d-flex"> <span> 06</span> <a class="nav-link menu-item text-dark" href="#">Terms of Service<br>
+            <!-- <li class="nav-item d-flex"> <span> 05</span> <a class="nav-link menu-item text-dark" href="#">Behance</a> </li> -->
+            <li class="nav-item d-flex"> <span> 05</span> <a class="nav-link menu-item text-dark" href="#">Terms of Service<br>
               & Privacy Policy</a> </li>
           </ul>
         </div>
@@ -481,12 +513,12 @@
           <ul class="time list-unstyled">
             <li>
               <time class="footer-time--pst">11:55 am</time>
-              <location>Los Angeles, CA</location>
+              <location class="text-uppercase">Los Angeles, CA</location>
               <div class="tag">Pacific Time</div>
             </li>
             <li>
               <time class="footer-time--est" >8:55 PM</time>
-              <location>NEW YORK, NY</location>
+              <location  class="text-uppercase">NEW YORK, NY</location>
               <div class="tag">EASTERN STANDARD TIME</div>
             </li>
             <!-- 
@@ -500,11 +532,19 @@
       </div>
     </div>
   </div>
+
 </footer>
+<a href="#" class="btn-up d-none">
+<img src="images/btn-up.svg">
+</a>
 <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+
 </body>
 </html>
