@@ -12337,6 +12337,7 @@ h4,
 .mob-menu .mob-menu__items li {
   margin: 16px 0;
 }
+
 .burger .burger__item {
   width: 18px;
   display: block;
@@ -12486,7 +12487,6 @@ h4,
   height: 100%;
   padding: 15px;
   border-right: 1px solid #ec9747;
-  webkit-transition: 0.8s;
   transition: 0.8s;
   position: relative;
   overflow: hidden;
@@ -12854,8 +12854,33 @@ img#to-right {
 .pricing__option:last-child {
   margin-top: 45px;
 }
-.pricing__option:hover {
-  cursor: pointer;
+@media (min-width: 768px) {
+  .pricing__option:hover {
+    box-shadow: -11.201px 14.562px 22.402px 0px rgba(0, 0, 0, 0.4), 11.201px -14.562px 22.402px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 9999;
+    background: #ec9747;
+    color: #221f20;
+  }
+  .pricing__option:hover h4, .pricing__option:hover .h4 {
+    color: #221f20;
+  }
+  .pricing__option:hover hr {
+    background-color: #221f20;
+    opacity: 1;
+  }
+  .pricing__option:hover li {
+    background-image: url(../images/check-white.svg);
+  }
+  .pricing__option:hover .btn {
+    background-color: #221f20 !important;
+    color: #fff;
+  }
+  .pricing__option:hover .btn:hover {
+    background-color: #fff !important;
+    color: #221f20;
+  }
 }
 .pricing__option .plan_tag {
   right: 17px;
@@ -12873,40 +12898,33 @@ img#to-right {
   line-height: 120%; /* 13.441px */
 }
 
-.pricing__option.premium,
-.pricing__option:hover {
+.pricing__option.premium {
   margin-top: 0;
   font-size: 14px;
   max-width: 372px;
   padding: 44.805px 17.922px 17.922px 17.922px;
   border: 1.12px solid #221f20;
   border-radius: 22.402px;
-  box-shadow: -11.201px 14.562px 22.402px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -11.201px 14.562px 22.402px 0px rgba(0, 0, 0, 0.4), 11.201px -14.562px 22.402px 0px rgba(0, 0, 0, 0.4);
   background: #ec9747;
   color: #221f20;
 }
-.pricing__option.premium h4, .pricing__option.premium .h4,
-.pricing__option:hover h4,
-.pricing__option:hover .h4 {
+.pricing__option.premium h4, .pricing__option.premium .h4 {
   color: #221f20;
 }
-.pricing__option.premium hr,
-.pricing__option:hover hr {
+.pricing__option.premium hr {
   background-color: #221f20;
   opacity: 1;
 }
-.pricing__option.premium li,
-.pricing__option:hover li {
+.pricing__option.premium li {
   font-size: 16px;
   background-image: url(../images/check-white.svg);
 }
-.pricing__option.premium .btn,
-.pricing__option:hover .btn {
+.pricing__option.premium .btn {
   background-color: #221f20 !important;
   color: #fff;
 }
-.pricing__option.premium .btn:hover,
-.pricing__option:hover .btn:hover {
+.pricing__option.premium .btn:hover {
   background-color: #fff !important;
   color: #221f20;
 }

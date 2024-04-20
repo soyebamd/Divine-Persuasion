@@ -3,6 +3,8 @@ import "../scss/styles.scss";
 
 import checkImage from "../images/check.svg";
 
+import "./our-solutions.js";
+
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
 
@@ -14,6 +16,23 @@ function windowWdith() {
   if (WW < 768) {
     slidecal = "100%";
     console.log(WW);
+
+    $(".adventure-slider").slick({
+      infinite: true,
+      slidesToShow: 3,
+      autoplay: true,
+      arrows: false,
+      dots: false,
+      slidesToScroll: 1,
+
+      responsive: [
+        {
+          breakpoint: 768,
+
+          settings: { slidesToShow: 1 },
+        },
+      ],
+    });
   } else {
     slidecal = 30 / getslide + "%";
     console.log(WW);
@@ -83,23 +102,6 @@ $(".projects-gallery").slick({
     {
       breakpoint: 768,
       settings: { slidesToShow: 2 },
-    },
-  ],
-});
-
-$(".adventure-slider").slick({
-  infinite: true,
-  slidesToShow: 3,
-  autoplay: true,
-  arrows: false,
-  dots: false,
-  slidesToScroll: 1,
-
-  responsive: [
-    {
-      breakpoint: 768,
-
-      settings: { slidesToShow: 1 },
     },
   ],
 });
